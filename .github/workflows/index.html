@@ -1,1 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Music Tech Hub (Edexcel AS/A Level)</title>
+  <meta name="description" content="Edexcel Music Technology AS/A Level hub: glossary, revision, resources, exam prep, composition help, and interactive games." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <div class="app" id="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand__logo">MT</div>
+        <div class="brand__text">
+          <div class="brand__title">Music Tech Hub</div>
+          <div class="brand__sub">Edexcel AS/A Level</div>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <button class="nav__item" data-route="home">Home</button>
+        <button class="nav__item" data-route="glossary">Glossary</button>
+        <button class="nav__item" data-route="games">Games</button>
+        <button class="nav__item" data-route="revision">Revision</button>
+        <button class="nav__item" data-route="resources">Resources</button>
+        <button class="nav__item" data-route="exam">Exam Prep</button>
+        <button class="nav__item" data-route="composition">Composition</button>
+        <button class="nav__item" data-route="logic">Logic Pro Guide</button>
+        <button class="nav__item" data-route="printables">Printables</button>
+        <button class="nav__item" data-route="answers">Answers</button>
+      </nav>
+
+      <div class="sidebar__footer">
+        <button class="btn btn--ghost" id="panicBtn" title="Stops any playing audio (later stages)">PANIC / STOP AUDIO</button>
+        <div class="muted tiny">No logins. No names. Local-only progress.</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="search">
+          <input id="globalSearch" type="search" placeholder="Search everything… (terms, topics, questions, links)" autocomplete="off" />
+        </div>
+
+        <div class="topbar__actions">
+          <button class="btn btn--ghost" id="darkToggle" aria-pressed="false" title="Toggle dark mode">
+            Dark mode
+          </button>
+          <a class="btn btn--ghost" id="openStandalone" href="#" target="_blank" rel="noreferrer">Open full screen</a>
+        </div>
+      </header>
+
+      <section class="content" id="content">
+        <section class="page" data-page="home">
+          <h1>Welcome</h1>
+          <p class="lede">
+            This is a public revision + games hub for <strong>Edexcel Music Technology (AS & A Level)</strong>.
+            It’s beginner-friendly, but there’s extra depth when you’re ready. No fluff. Minimal nonsense.
+          </p>
+
+          <div class="card">
+            <h2>How to use this site</h2>
+            <ul>
+              <li>Use the sidebar to jump between sections.</li>
+              <li>Use the search bar to find terms, topics, resources, and exam prompts.</li>
+              <li>Printables are A4 and designed to actually be useful (wild concept).</li>
+            </ul>
+          </div>
+
+          <div class="grid2">
+            <div class="card">
+              <h2>Course overview (placeholder)</h2>
+              <p>
+                In Stage 2 we’ll pull in accurate Edexcel component details and checklists (AS vs A Level).
+              </p>
+              <ul>
+                <li>Component 1: Recording (NEA)</li>
+                <li>Component 2: Technology-based Composition (NEA)</li>
+                <li>Component 3: Listening & Analysing (Exam)</li>
+                <li>Component 4: Producing & Analysing (Exam)</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <h2>What this site covers</h2>
+              <p class="muted">Signal flow, mics, synthesis, MIDI, sampling, EQ, dynamics, mixing, mastering, creative FX + a bit of history.</p>
+              <div class="tagrow">
+                <span class="tag">Beginner</span>
+                <span class="tag">Intermediate</span>
+                <span class="tag">Advanced</span>
+                <span class="tag">WebAudio Games</span>
+                <span class="tag">A4 Printables</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page" data-page="glossary">
+          <h1>Glossary</h1>
+          <p class="muted">Stage 2 builds the full searchable split view + printable filtered lists.</p>
+          <div class="card">
+            <p><strong>Coming next:</strong> list on the left, term details on the right, tags + difficulty filters.</p>
+          </div>
+        </section>
+
+        <section class="page" data-page="games">
+          <h1>Games</h1>
+          <p class="muted">Stage 4 adds WebAudio EQ trainer, stereo imaging, patchbay routing, signal chain builder, flashcards.</p>
+          <div class="card">
+            <p><strong>Launch set:</strong> EQ trainer, Patchbay routing, Stereo imaging, Signal chain builder, Flashcards.</p>
+            <p class="tiny muted">Audio will only start after you click a button (browser rules, not mine).</p>
+          </div>
+        </section>
+
+        <section class="page" data-page="revision">
+          <h1>Revision</h1>
+          <p class="muted">Short notes with expandable “More detail” sections (Stage 2).</p>
+        </section>
+
+        <section class="page" data-page="resources">
+          <h1>Resources</h1>
+          <p class="muted">Stage 2 adds curated links (incl. YouTube) + a clickable history timeline.</p>
+        </section>
+
+        <section class="page" data-page="exam">
+          <h1>Exam Prep</h1>
+          <p class="muted">Stage 2 adds command words, practice questions, answer scaffolds, and copy-to-clipboard response boxes.</p>
+        </section>
+
+        <section class="page" data-page="composition">
+          <h1>Composition (Component 2)</h1>
+          <p class="muted">Stage 2 adds step-by-step routes: start from drums / chords / sample + templates.</p>
+        </section>
+
+        <section class="page" data-page="logic">
+          <h1>Logic Pro Guide (Mac)</h1>
+          <p class="muted">Stage 2 adds key commands by category, each with a short “what it does”.</p>
+        </section>
+
+        <section class="page" data-page="printables">
+          <h1>Printables (A4)</h1>
+          <p class="muted">Stage 3 adds selectable bundles + print layouts with no sidebar.</p>
+        </section>
+
+        <section class="page" data-page="answers">
+          <h1>Answers</h1>
+          <p class="muted">Stage 3 adds hold-to-reveal (1 second) answer key, bullet guidance only.</p>
+        </section>
+      </section>
+
+      <footer class="footer">
+        <span class="tiny muted">Music Tech Hub • Built for Edexcel AS/A Level • Local-only progress • No names • No accounts</span>
+      </footer>
+    </main>
+  </div>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
 
